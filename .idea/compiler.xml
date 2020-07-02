@@ -9,5 +9,6 @@
         <module name="TgBOT" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="13" />
   </component>
 </project>
