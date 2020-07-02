@@ -26,9 +26,6 @@
             <artifactId>telegrambotsextensions</artifactId>
             <version>4.9</version>
         </dependency>
-
-        
     </dependencies>
-
 
 </project>
