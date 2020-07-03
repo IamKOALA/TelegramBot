@@ -28,12 +28,24 @@ public class Bot extends TelegramLongPollingBot {
             switch (message.getText()) {
                 case "/start":
                     try {
-                        execute(sendMessage.setText("Oh, hello there"));
+                        execute(sendMessage.setText("Oh, hello there \nWrite /help for more info :0"));
+                    } catch (TelegramApiException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "/help":
+                    try {
+                        execute(sendMessage.setText("Here you can configure your notifications at Jira"));
                     } catch (TelegramApiException e) {
                         e.printStackTrace();
                     }
                     break;
                 default:
+                    try {
+                        execute(sendMessage.setText("I'm actually don't understand, dude :-/"));
+                    } catch (TelegramApiException e) {
+                        e.printStackTrace();
+                    }
             }
         }
 
